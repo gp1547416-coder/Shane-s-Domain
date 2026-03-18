@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shane's Domain | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #050505; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .glow:hover { box-shadow: 0 0 20px rgba(99, 102, 241, 0.4); transition: 0.3s; }
+    </style>
+</head>
+<body class="text-white min-h-screen flex items-center justify-center p-6">
+
+    <div class="max-w-2xl w-full space-y-8 text-center">
+        <div class="space-y-4">
+            <div class="w-24 h-24 bg-gradient-to-tr from-indigo-500 to-purple-500 rounded-full mx-auto flex items-center justify-center text-4xl font-black shadow-xl">
+                S
+            </div>
+            <h1 class="text-5xl font-black tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500">
+                SHANE'S DOMAIN
+            </h1>
+            <p class="text-gray-400 text-lg">Building the future, one commit at a time.</p>
+        </div>
+
+        <div class="grid gap-4">
+            <a href="https://github.com/Shanes-Domain" target="_blank" 
+               class="glass glow p-4 rounded-2xl flex items-center justify-between group transition-all">
+                <span class="font-bold text-lg px-4">GitHub Repository</span>
+                <svg class="w-6 h-6 mr-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </a>
+
+            <div class="grid grid-cols-2 gap-4">
+                <div class="glass p-6 rounded-2xl text-left">
+                    <h3 class="text-indigo-400 font-bold">Projects</h3>
+                    <p class="text-2xl font-black">12+</p>
+                </div>
+                <div class="glass p-6 rounded-2xl text-left">
+                    <h3 class="text-purple-400 font-bold">Uptime</h3>
+                    <p class="text-2xl font-black">99.9%</p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="pt-8">
+            <p class="text-xs text-gray-600 uppercase tracking-widest font-bold">Powered by Vercel & Shane</p>
+        </footer>
+    </div>
+
+</body>
+</html>
